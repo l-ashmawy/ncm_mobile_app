@@ -400,12 +400,16 @@ class ServicesPage extends StatelessWidget {
             onTap: () => bloc.add(OnSubmitStationDetails()),
           ),
 
-          AppButton(
-            title: "Show reporting",
-            color: Colors.transparent,
-            onTap: () => Modular.to.pushNamed(
-                NavigatorKeys.SERVICES_KEY + NavigatorKeys.REPORTS_PAGE),
-          ),
+          if (Modular.get<PreferenceManager>()
+              .stationDetailsData()
+              .isNotEmpty) ...[
+            AppButton(
+              title: "Show reporting",
+              color: Colors.transparent,
+              onTap: () => Modular.to.pushNamed(
+                  NavigatorKeys.SERVICES_KEY + NavigatorKeys.REPORTS_PAGE),
+            ),
+          ]
         ],
       )),
     );

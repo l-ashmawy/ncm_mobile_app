@@ -16,7 +16,6 @@ class StatusComponent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: Container(
-        height: context.screenHeight * 0.17,
         padding: const EdgeInsets.only(bottom: 8),
         decoration: CustomDecorationContainer.decoration(image: image),
         child: Column(
