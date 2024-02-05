@@ -8,9 +8,9 @@ class PreferenceManager {
 
   String getValue(String cachingKey) => GetStorage().read(cachingKey) as String;
 
-  void saveStationDetailsData(String data) =>
+  void saveStationDetailsData(List<String> data) =>
       GetStorage().write(CachingKey.STATION_DETAILS_DATA, data);
 
-  String stationDetailsData() =>
-      GetStorage().read(CachingKey.STATION_DETAILS_DATA) as String? ?? "";
+  List<String> stationDetailsData() =>
+      GetStorage().read(CachingKey.STATION_DETAILS_DATA) as List<String>? ?? [];
 }

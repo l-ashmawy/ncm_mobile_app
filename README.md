@@ -1,7 +1,8 @@
 # NCM Mobile App ReadMe
 
-NCM Mobile is a versatile project designed for submitting new request to get climate data. This comprehensive guide will provide you with everything you need to know to get started with the project, from installation instructions to a detailed description of its features.
-
+NCM Mobile is a versatile project designed for submitting new request to get climate data. This comprehensive guide will
+provide you with everything you need to know to get started with the project, from installation instructions to a
+detailed description of its features.
 
 ## Table of Contents
 
@@ -9,13 +10,13 @@ NCM Mobile is a versatile project designed for submitting new request to get cli
 
 - [Installation](#installation)
 
-  - [Prerequisites](#prerequisites)
+    - [Prerequisites](#prerequisites)
 
-  - [Clone the Repository](#clone-the-repository)
+    - [Clone the Repository](#clone-the-repository)
 
-  - [Configuration](#configuration)
+    - [Configuration](#configuration)
 
-  - [Build and Run](#build-and-run)
+    - [Build and Run](#build-and-run)
 
 - [Usage](#usage)
 
@@ -25,9 +26,11 @@ NCM Mobile is a versatile project designed for submitting new request to get cli
 
 ## Features
 
-- Login : That user can login with username and password and if data is correct then user can Login to the app and navigate to Dashboard.
+- Login : That user can login with username and password and if data is correct then user can Login to the app and
+  navigate to Dashboard.
 
-- Dashboard : User can see the weather data of the current location and numbers of services with status and can make request.
+- Dashboard : User can see the weather data of the current location and numbers of services with status and can make
+  request.
 
 - Services : Include station details that user can submit the details of the station to make request.
 
@@ -49,85 +52,33 @@ Before you begin, ensure you have the following dependencies and tools installed
 
 2. Use the following command to clone the NCM Mobile repository:
 
-git clone https://github.com/your-username/ProjectName.git
-
-Replace `your-username` with your GitHub username.
+git clone https://github.com/l-ashmawy/ncm_mobile_app.git
 
 ### Configuration
 
 1. Change your working directory to the cloned repository:
 
-cd ProjectName
+cd ncm_mobile_app
 
-2. [Configuration Step 1: Describe how to configure the project, such as setting up environment variables, creating configuration files, etc.]
-
-3. [Configuration Step 2: If there are additional configuration steps, outline them here.]
-
-4. Install the required dependencies using:
-
-[package manager] install
+1. Get dependences  : Open terminal and write
+    ```bash
+   make pub_get_install
+   ```
 
 ### Build and Run
 
 1. Connect your device or start an emulator.
 
 2. To build and run the project, use the following command:
-
-[build/run command]
-
+    ```bash
+   flutter run
+   ```
 This will build the project and install it on your connected device or emulator.
 
 ## Usage
 
-1. [Usage Step 1: Provide a brief overview of how to use the project, such as user registration, logging in, or main functionalities.]
+1. Login: enter you username and password and click on login button to navigate to the dashboard [username and password must be at least 5 characters].
+2. Dashboard: you can see the weather data and numbers of services with status and can make request when click on any item in services list.
+3. Services: you can submit the details of the station to make request.
+4. Reporting: you can see the requests that submitted by you. 
 
-2. [Usage Step 2: If the project has multiple use cases, provide additional usage instructions here.]
-
-## Contributing
-
-We welcome contributions to ProjectName. If you would like to contribute to the development or report issues, please follow these guidelines:
-
-1. Fork the repository.
-
-2. Create a new branch for your feature or bug fix.
-
-3. Make your changes and commit them with descriptive messages.
-
-4. Push your changes to your fork.
-
-5. Submit a pull request to the main repository.
-
-## License
-
-ProjectName is licensed under the [License Type](LICENSE). [Provide a link to the full license text if applicable.
-
-Thank you for choosing ProjectName! If you encounter any issues or have suggestions for improvements, please don't hesitate to [create an issue](https://github.com/your-username/ProjectName/issues) or [contribute to the project](#contributing). We look forward to your feedback and collaboration.
-
-
-## Installation Instructions
-
-
-
-
-- [Installation](#installation)
-
-    - To get all dependencies
-      - Using make file to get all dependencies in all modules open terminal and run the following command
-        ```bash
-        make pub_get_install
-        ```
-      - Using make file to clean projects in all modules open terminal and run the following command
-        ```bash
-        make clean_all
-        ```
-    - [Build and Run](#build-and-run)
-
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.

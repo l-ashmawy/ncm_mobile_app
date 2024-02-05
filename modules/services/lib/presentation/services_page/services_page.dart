@@ -1,7 +1,8 @@
 import 'package:art_core/art_core.dart';
+import 'package:core/core.dart';
 import 'package:dependencies/dependencies.dart';
-import 'package:services/presentation/services_bloc.dart';
-import 'package:services/presentation/widgets/check_box_item.dart';
+import 'package:services/presentation/services_page/services_bloc.dart';
+import 'package:services/presentation/services_page/widgets/check_box_item.dart';
 
 class ServicesPage extends StatelessWidget {
   const ServicesPage({super.key});
@@ -397,6 +398,13 @@ class ServicesPage extends StatelessWidget {
           AppButton(
             title: "Submit",
             onTap: () => bloc.add(OnSubmitStationDetails()),
+          ),
+
+          AppButton(
+            title: "Show reporting",
+            color: Colors.transparent,
+            onTap: () => Modular.to.pushNamed(
+                NavigatorKeys.SERVICES_KEY + NavigatorKeys.REPORTS_PAGE),
           ),
         ],
       )),

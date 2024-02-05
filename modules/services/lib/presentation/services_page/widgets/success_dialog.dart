@@ -8,7 +8,6 @@ void showSuccessDialog(StationDetailsModel stationDetailsData) {
   showDialog(
       context: Modular.routerDelegate.navigatorKey.currentContext!,
       builder: (context) => Dialog(
-            insetPadding: const EdgeInsets.all(20),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -19,6 +18,7 @@ void showSuccessDialog(StationDetailsModel stationDetailsData) {
                     fontWeight: FontWeight.bold,
                     color: AppColors.primaryColor,
                     fontSize: 20,
+                    maxLines: 2,
                   ),
                 ),
                 AppText(
@@ -95,6 +95,6 @@ void showSuccessDialog(StationDetailsModel stationDetailsData) {
                   maxLines: 3,
                 ),
               ],
-            ),
+            ).marginAll(20),
           ));
 }

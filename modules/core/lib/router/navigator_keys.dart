@@ -8,4 +8,8 @@ class NavigatorKeys {
   /// MAIN PAGE
   static const String MAIN_PAGE_KEY = "/main_page_key";
   static const String MAIN_PAGE = "/main_page/";
+
+  /// SERVICES
+  static const String SERVICES_KEY = '/services';
+  static const String REPORTS_PAGE = '/reports_page';
 }

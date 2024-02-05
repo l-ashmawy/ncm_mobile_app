@@ -4,7 +4,7 @@ import 'package:art_core/art_core.dart';
 import 'package:core/core.dart';
 import 'package:dependencies/dependencies.dart';
 import 'package:services/data/station_details_model.dart';
-import 'package:services/presentation/widgets/success_dialog.dart';
+import 'package:services/presentation/services_page/widgets/success_dialog.dart';
 
 part 'services_event.dart';
 part 'services_state.dart';
@@ -207,13 +207,15 @@ class ServicesBloc extends Bloc<ServicesEvent, ServicesState> {
         position: jsonEncode(position.value.toJson()),
         deedType: deedType.value,
       );
-      _preferenceManager
-          .saveStationDetailsData(jsonEncode(stationDetails.toJson()));
+      final requestsList = _preferenceManager.stationDetailsData();
+      print(requestsList.length);
+      requestsList.add(jsonEncode(stationDetails.toJson()).toString());
+      _preferenceManager.saveStationDetailsData(requestsList);
       showLoadingDialog();
       Future.delayed(const Duration(seconds: 1), () {
         Modular.to.pop();
         StationDetailsModel stationDetailsData = StationDetailsModel.fromJson(
-            jsonDecode(Modular.get<PreferenceManager>().stationDetailsData()));
+            jsonDecode(_preferenceManager.stationDetailsData().last));
         showSuccessDialog(stationDetailsData);
       });
     }

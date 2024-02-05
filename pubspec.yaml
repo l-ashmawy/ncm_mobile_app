@@ -23,6 +23,8 @@ dependencies:
     path: ./modules/authentication
   main_page:
     path: ./modules/main_page
+  services:
+    path: ./modules/services
 
 
 dev_dependencies:

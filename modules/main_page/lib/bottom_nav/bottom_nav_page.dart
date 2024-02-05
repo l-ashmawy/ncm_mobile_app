@@ -1,7 +1,7 @@
 import 'package:art_core/art_core.dart';
 import 'package:dashboard/presentation/dashboard_page.dart';
 import 'package:dependencies/dependencies.dart';
-import 'package:services/presentation/services_page.dart';
+import 'package:services/presentation/services_page/services_page.dart';
 
 import 'bottom_nav_bloc.dart';
 
