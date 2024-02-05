@@ -1,0 +1,26 @@
+name: core
+description: Core Module
+version: 0.0.1
+
+publish_to: 'none'
+
+environment:
+  sdk: '>=2.19.6 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  dependencies:
+    path: ../dependencies
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+dependency_overrides:
+  intl: ^0.18.0
+
+flutter:
+

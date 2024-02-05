@@ -1,0 +1,39 @@
+name: dependencies
+description: Dependencies module
+version: 0.0.1
+
+publish_to: 'none'
+
+
+environment:
+  sdk: '>=2.19.6 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  flutter_modular: ^5.0.3
+  flutter_bloc: ^8.1.2
+  equatable: ^2.0.5
+  rxdart: ^0.27.7
+  mockito: ^5.3.2
+  auto_size_text: ^3.0.0
+  dartz: ^0.10.1
+  get_storage: ^2.0.2
+  expandable:
+    git:
+      url: https://github.com/l-ashmawy/flutter-expandable-custom-icon.git
+  intl: ^0.17.0
+  geolocator: ^10.1.0
+  file_picker: ^6.1.1
+  image_picker: ^1.0.5
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+
+flutter:
+
